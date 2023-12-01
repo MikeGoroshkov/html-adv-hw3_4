@@ -1,0 +1,230 @@
+@media (max-width: 768px) {
+    $widthSite: 736px;
+
+    .center {
+        padding-left: calc(50% - 368px);
+        /*735px*/
+        padding-right: calc(50% - 368px); 
+    }
+
+    .container {
+        width: 736px;
+    }
+
+    .main-heading {
+        font-size: 44px;
+    }
+
+    .main-black,
+    .main-color {
+        font-size: 24px;
+    }
+
+    .offer {
+        margin-top: 20px;
+        margin-bottom: 155px;
+        &-top {
+            // gap: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .catalog {
+        margin-bottom: 65px;
+        &-title {
+            margin-bottom: 4px;
+        }
+        &-text {
+            margin-bottom: 73px;
+        }
+        &-product {
+            margin-bottom: 33px;
+
+            &__card {
+                width: 49%;
+                // gap: 16px; остается 2%
+            }
+        }
+
+    }
+
+    .feature {
+        flex-direction: column;
+        justify-content: space-between;
+        /* gap: 49px; */
+        padding: 0;
+        /* margin-top: 49px;*/
+        padding-bottom: 64px;
+
+        &-group {
+            padding: 49px 0 0 0;
+            width: 47%;
+        }
+    }
+
+    .subscribe {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+        background-position: left;
+        text-align: center;
+
+        &-left,
+        &-right {
+            width: 47%;
+        }
+    }
+
+    .footer {
+        &-left {
+            width: 47%;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 360px;
+    }
+
+    .center {
+        padding-left: calc(50% - 180px);
+        /*375px*/
+        padding-right: calc(50% - 180px);
+    }
+
+    .search-form {
+        display: none;
+    }
+
+    /* .header-left {  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        width: 35%;
+    }
+    .header-right {
+        width: 60%;
+    } */
+    /* .header-right */
+    // .logo {
+    //     padding-left: 16px;
+    // }
+
+    // .burger {
+    //     padding-right: 16px;
+    // }
+
+    .header-right__link {
+        visibility: hidden; 
+        display: none;
+    }
+
+    .main {
+        &-img {
+            visibility: hidden;
+            width: 0;
+        }
+        &-right {
+            padding: 148px 0;
+            /* padding: 148px 0; */
+            width: 99%;
+            display: flex;
+            justify-content: center;
+        }
+        &-heading {
+            font-size: 38px;
+        }
+        &-black,
+        &-color {
+            font-size: 20px;
+        }
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 64px;
+
+        &-top {
+            flex-direction: column;
+            gap: 32px;
+            width: 95%;
+        }
+
+        &-group {
+            /* width: 91%; */
+            text-align: center;
+            align-items: center;
+        }
+        &-bottom {
+            width: 95%;
+
+            &-img {
+                height: 111px;
+            }
+        }
+    }
+
+    .catalog {
+        max-width: 100%;
+        margin-bottom: 96px;
+        &-text {
+            margin-bottom: 65px;
+        }
+        &-product {
+            justify-content: center;
+            margin-bottom: 41px;
+
+            &__card {
+                width: 95%;
+            }
+        }
+    }
+
+    .feature {
+        padding-bottom: 81px;
+        &-group {
+            width: 94%;
+        }
+    }
+
+    .subscribe {
+        padding-bottom: 110px;
+        gap: 59px;
+
+        &-left {
+            width: 90%;
+            &__dsc {
+                font-size: 18px;
+            }
+        }
+        &-right {
+            width: 90%;
+            &__text {
+                font-size: 14px;
+            }
+        }
+        
+    }
+
+    .footer {
+        flex-direction: column;
+        padding-top: 43px;
+        padding-bottom: 9px;
+        // gap: 40px;
+
+        &-left, 
+        &-right {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+        }
+        &-left {
+            order: 1
+        }
+
+        &-right {
+            order: 0;
+        }
+    }
+}
